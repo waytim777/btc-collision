@@ -1,6 +1,8 @@
 Introduction: Install BTC and update to the latest block, use bitcoin-utxo-dump-master to obtain and parse all utxo, get all BTC accounts with balance and convert them to csv. 
 Use qz.py to filter, get all accounts with balance above 0.7BTC and generate them into txt. 
 Finally, use btckeygen-master to batch generate private keys and convert them to various addresses and check whether there is balance.
+this project use go and python. the bitcoin-utxo-dump-master is quote.  
+about btckeygen-master. Because the BTC collision is queried from memory. So the speed is very fast, about 8000 times per second. This is the result of multi-threading. If your PC configuration is better, you can modify the code to add more threads to increase the speed.
 
 way 1:
   step 1. install btc, and update block to newest.
